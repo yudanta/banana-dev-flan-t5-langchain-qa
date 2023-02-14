@@ -14,6 +14,7 @@ def init():
     logger.info("initializing flan-t5 model...")
 
     tokenizer = T5Tokenizer.from_pretrained("google/flan-t5-xl")
+    device = 0 if torch.cuda.is_available() else -1
     model = T5ForConditionalGeneration.from_pretrained(
         "google/flan-t5-xl", 
         device_map="auto", 
@@ -21,7 +22,9 @@ def init():
     )
     
     model = pipeline(
-        "text2text-generation", model=model, tokenizer=tokenizer
+        "text2text-generation", model=model, 
+        tokenizer=tokenizer,
+        device=device
     )
 
     logger.info("initializing flan-t5 model is done!")
