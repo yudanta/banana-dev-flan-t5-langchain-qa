@@ -1,0 +1,15 @@
+# app requirements
+transformers
+accelerate
+sentencepiece
+bitsandbytes
+langchain
+fastapi
+uvicorn
+banana-dev
+python-dotenv
+
+# external requirements
+isort
+black
+ruff
