@@ -24,6 +24,6 @@
         ",
         "question": "What are Land Rover line-up products?"
     },
-    "example_output": ["Range Rover, Discovery, and Defenders"],
+    "example_output": "Range Rover, Discovery, and Defenders",
     "version": "1"
 }
