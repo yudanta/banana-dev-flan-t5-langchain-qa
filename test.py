@@ -6,7 +6,7 @@ import dotenv
 dotenv.load_dotenv(".env")
 
 api_key = os.environ.get("BANANA_DEV_API_KEY", None)
-model_key = os.environ.get("BERT_DEV_TEST_MODEL_KEY", None)
+model_key = os.environ.get("T5_QA_MODEL_KEY", None)
 
 payload = {
     "context": """Land Rover is a British brand of predominantly four-wheel drive, off-road capable vehicles, owned by multinational car manufacturer Jaguar Land Rover (JLR), since 2008 a subsidiary of India's Tata Motors.[3] JLR currently builds Land Rovers in Brazil, China, India, Slovakia, and the United Kingdom. The Land Rover name was created in 1948 by the Rover Company for a utilitarian 4WD off-road vehicle; currently, the Land Rover range comprises solely of upmarket and luxury sport utility vehicles.
